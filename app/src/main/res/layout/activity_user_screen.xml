@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreen"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, "
+        android:textSize="20dp"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/emailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_below="@+id/welcome"
+        android:text=" "
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/groupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_below="@+id/emailID"
+        android:text=" "
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/studentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupID"
+        android:layout_alignStart="@id/welcome"
+        android:text=" "
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/studentID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Tap To Attend"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/attend"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/roomLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="View Routine"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/schedule"/>
+
+    <TextView
+        android:id="@+id/roomLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nfcLogo"
+        android:layout_alignStart="@id/welcome"
+        android:text="Tap on room NFC to attend "
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/nfcLogo"
+        android:layout_width="279dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        app:srcCompat="@drawable/nfc_logo" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/roomLog"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/NFCcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/studentID"
+        android:layout_marginTop="10dp"
+        android:text="Checking NFC status..." />
+
+
+
+
+</RelativeLayout>
